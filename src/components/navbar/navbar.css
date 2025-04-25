@@ -1,0 +1,110 @@
+.navbar{
+    box-sizing: border-box;
+
+  
+}
+nav{
+    box-sizing: border-box;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    height: 3.5rem;
+    /* line-height: 3.5rem; */
+    align-items: center;
+    padding-top: 15px;
+    
+    
+}
+.logo{
+    color: rgb(228, 41, 8);
+    cursor: pointer;
+ 
+}
+.menu ul{
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+
+}
+.menu ul a{
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.custom_icon{
+    font-size: x-large;
+    cursor: pointer;
+    
+}
+.singin_btn{
+    background-color: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.menu .active{
+    padding-bottom: 2px;
+    border-bottom: 3px solid #49557e;
+}
+@media (max-width:1050px) {
+    .navbar .logo{
+        width: 140px;
+    }
+    .menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .nav-right{
+        gap: 30px;
+    }
+    .nav-right img{
+        width: 22px;
+    }
+    .singin_btn{
+        padding: 8px 25px;
+       
+    }
+
+}
+@media (max-width:900px) {
+    .navbar .logo{
+        width: 140px;
+    }
+    .menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .nav-right{
+        gap: 20px;
+    }
+    .nav-right img{
+        width: 20px;
+    }
+    .singin_btn{
+        padding: 7px 20px;
+       font-size: 15px;
+    }
+
+}
+
+@media (max-width:750px) {
+
+    .menu{
+        display: none;
+    }
+
+
+}
