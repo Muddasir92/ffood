@@ -20,7 +20,7 @@ nav{
     cursor: pointer;
  
 }
-.menu ul{
+.navmenu ul{
     box-sizing: border-box;
     list-style: none;
     display: flex;
@@ -30,7 +30,7 @@ nav{
 
 
 }
-.menu ul a{
+.navmenu ul a{
     font-size: 1.3rem;
     cursor: pointer;
     text-transform: lowercase;
@@ -55,7 +55,7 @@ nav{
     padding: 10px 30px;
     cursor: pointer;
 }
-.menu .active{
+.navmenu .active{
     padding-bottom: 2px;
     border-bottom: 3px solid #49557e;
 }
@@ -63,9 +63,9 @@ nav{
     .navbar .logo{
         width: 140px;
     }
-    .menu{
+    .navmenu{
         gap: 20px;
-        font-size: 17px;
+        font-size: 700px;
     }
     .nav-right{
         gap: 30px;
@@ -83,7 +83,7 @@ nav{
     .navbar .logo{
         width: 140px;
     }
-    .menu{
+    .navmenu{
         gap: 15px;
         font-size: 16px;
     }
@@ -102,7 +102,7 @@ nav{
 
 @media (max-width:750px) {
 
-    .menu{
+    .navmenu{
         display: none;
     }
 

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="logo">
           <h2>Chicken Express</h2>
         </div>
-        <div className="menu">
+        <div className="navmenu">
           <ul>
             <Link to='/'
               onClick={() => handleMenu("home")}
