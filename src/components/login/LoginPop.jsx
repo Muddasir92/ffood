@@ -30,12 +30,12 @@ const LoginPop = ({ setshowlogin }) => {
         {currentstate === "SignUp" ? (
           <div className="policy">
             <p>I agree with all terms and conditions</p>
-            <input  type="checkbox" name="" id="" />
+            <input type="checkbox" name="" id="" />
           </div>
         ) : (
           <></>
         )}
-        <div >
+        <div>
           <button className="ActionBtn">
             {currentstate === "LogIn" ? "LogIn " : "Create Account"}
           </button>
@@ -44,12 +44,22 @@ const LoginPop = ({ setshowlogin }) => {
           {currentstate === "LogIn" ? (
             <p>
               Create New Account?
-              <span onClick={() => setcurrentstate("SignUp")} className="loginSignSpan"  >Click here</span>
+              <span
+                onClick={() => setcurrentstate("SignUp")}
+                className="loginSignSpan"
+              >
+                Click here
+              </span>
             </p>
           ) : (
             <p>
               Already have an account?
-              <span onClick={() => setcurrentstate("LogIn")} className="loginSignSpan"  >Login here</span>
+              <span
+                onClick={() => setcurrentstate("LogIn")}
+                className="loginSignSpan"
+              >
+                Login here
+              </span>
             </p>
           )}
         </div>
