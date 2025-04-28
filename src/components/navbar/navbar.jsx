@@ -7,7 +7,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({setshowlogin}) => {
   const [menu, setMenu] = useState("home");
   function handleMenu (val) {
     setMenu(val);
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="nav-right">
           <FontAwesomeIcon icon={faSearch} className="custom_icon" />
           <FontAwesomeIcon icon={faBasketShopping} className="custom_icon" />
-          <button className="singin_btn">sign in</button>
+          <button className="singin_btn"  onClick={()=>setshowlogin(true)} >sign in</button>
         </div>
       </nav>
     </div>

@@ -19,7 +19,7 @@ const Header = () => {
           with convenient and delicious options, one perfectly frozen meal at a
           time.
         </p>
-        <button>View Menu</button>
+        <a href="#menu"><button id="viewmenu">View Menu</button></a>
       </div>
     </div>
     </div>

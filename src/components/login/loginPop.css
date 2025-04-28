@@ -1,0 +1,61 @@
+.loginPopUp{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00000090;
+    z-index: 1;
+    display: grid;
+
+
+}
+.loginPopContainer{
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    padding: 25px 30px;
+    animation: fadeIn 0.5s;
+    /* font-size: 8px; */
+
+
+}
+.lopinName{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lopinName h2{
+    color: #ff4d00;
+}
+.lopinName img{
+    height: 9%;
+    width: 9%;
+}
+.loginInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.loginInputs input{
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.ActionBtn{
+    padding: 6px 8px;
+    border-radius: 8px; 
+    background-color: #ff4d00;
+    border: none;
+    font-size: 90%;
+    color: white;
+    
+}
+.loginSignSpan{
+    color: red;
+    margin: 4px;
+    cursor: pointer;
+}
