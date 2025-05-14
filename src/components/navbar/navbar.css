@@ -1,8 +1,15 @@
 .navbar{
-    box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Needed to prevent see-through */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: gives subtle shadow */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
 
-  
-}
 nav{
     box-sizing: border-box;
     /* background-color: red; */
@@ -10,17 +17,19 @@ nav{
     justify-content: space-around;
     height: 3.5rem;
     /* line-height: 3.5rem; */
-    align-items: center;
-    padding-top: 15px;
+    /* align-items: center; */
+    /* padding-top: 15px; */
     
     
 }
 .logo{
+    margin-top: 10px;
     color: rgb(228, 41, 8);
     cursor: pointer;
  
 }
 .navmenu ul{
+    padding-top: 13px;
     box-sizing: border-box;
     list-style: none;
     display: flex;
@@ -36,6 +45,8 @@ nav{
     text-transform: lowercase;
 }
 .nav-right{
+    /* margin-bottom: 20px; */
+    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +58,8 @@ nav{
     
 }
 .singin_btn{
+    position: relative;
+    margin-bottom: ;
     background-color: transparent;
     font-size: 16px;
     color: #49557e;
