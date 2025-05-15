@@ -17,7 +17,7 @@ const Navbar = ({ setshowlogin }) => {
       <nav>
         <div className="logo">
           <Link to="/">
-            <h2  onClick={()=>window.scrollTo({top:0, behavior:"smooth"})} >Chicken Express</h2>
+            <h2  onClick={()=>window.scrollTo({top:0, behavior:"smooth"})} >Food Point</h2>
           </Link>
         </div>
         <div className="navmenu">
