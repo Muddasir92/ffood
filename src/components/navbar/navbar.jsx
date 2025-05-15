@@ -13,7 +13,7 @@ const Navbar = ({ setshowlogin }) => {
   }
 
   return (
-    <div className="navbar">
+    <div className="navbarCon">
       <nav>
         <div className="logo">
           <Link to="/">
