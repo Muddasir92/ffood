@@ -21,7 +21,7 @@ const removeFromCart=(itemId)=>{
 
 }
 useEffect(()=>{
-    console.log(cartItems)
+    // console.log(cartItems)
 })
 const contextValue ={
     food_list,
