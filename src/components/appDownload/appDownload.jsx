@@ -1,7 +1,7 @@
-import "./appDownload.css"
+import './AppDownload.css'
 import { assets } from '../../assets/assets'
 
-const appDownload = () => {
+const AppDownload = () => {
   return (
     <div className='appDownload' id='mobileApp'>
         <p>For Better Experience Download  <br /> Chicken Express App</p>
@@ -13,4 +13,4 @@ const appDownload = () => {
   )
 }
 
-export default appDownload
+export default AppDownload
