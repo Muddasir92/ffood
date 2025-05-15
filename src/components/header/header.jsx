@@ -1,5 +1,4 @@
-import React from "react";
-import "../header/header.css";
+import "./Header.css";
 
 
 

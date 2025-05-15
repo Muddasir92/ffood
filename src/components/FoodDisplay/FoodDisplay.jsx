@@ -14,7 +14,7 @@ const FoodDisplay = ({ category }) => {
 
           if ( category==="All" || category === item.category) {
             {
-                console.log(item.category);
+                // console.log(item.category);
               }
             return (
               <FoodItem
