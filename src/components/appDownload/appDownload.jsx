@@ -1,5 +1,4 @@
-import React from 'react'
-import '../appDownload/appDownload.css'
+import "./appDownload.css"
 import { assets } from '../../assets/assets'
 
 const appDownload = () => {
