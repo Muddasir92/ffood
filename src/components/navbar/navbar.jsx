@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import "./Navbar.css";
+import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
