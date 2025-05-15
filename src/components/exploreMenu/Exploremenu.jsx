@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../exploreMenu/exploremenu.css";
+
+import "./Exploremenu.css";
 import { menu_list } from "../../assets/assets";
 
 const Exploremenu = ({ category, setCategory }) => {
