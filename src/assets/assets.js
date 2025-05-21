@@ -153,7 +153,7 @@ export const food_list = [
         _id: "5",
         name: "Lasagna Rolls",
         image: food_5,
-        price: "free",
+        price: "70",
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {

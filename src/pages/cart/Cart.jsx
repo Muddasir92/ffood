@@ -3,9 +3,9 @@ import "./Cart.css"
 import { storeContext } from "../../context/storeContext"
 
 const Cart = () => {
-  const{cartItems, food_list}=useContext(storeContext)
+  const{cartItems, food_list,removeFromCart}=useContext(storeContext)
   return (
-<div className="cartmain">
+<div className="cart">
   <div className="cart-Items">
     <div className="cartItemsTitle">
     <p>Items</p>
@@ -20,17 +20,17 @@ const Cart = () => {
     <br />
     <hr />
  
-    {food_list.map((item,index)=>{
-      console.log(item);
+    {food_list.map((item)=>{
+      // console.log(item);
       if(cartItems[item._id]>0){
         return(
-          <div className="ggg" key="index" >
+          <div className="cartItemsTitle cartItemItem" key={item._id} >
             <img src={item.image} alt="loading image" />
             <p>{item.name}</p>
-            <p>{item.price}</p>
+            <p>${item.price}</p>
             <p>{cartItems[item._id]}</p>
             <p>{item.price*cartItems[item._id]}</p>
-            <p>x</p>
+            <p className="cross" onClick={()=>removeFromCart(item._id)}>x</p>
 
 
           </div>
@@ -39,6 +39,36 @@ const Cart = () => {
       return null;
     })}
 
+  </div>
+  <div className="cart-bottom">
+    <div className="cart-total">
+      <h2>Cart Totals</h2>
+      <div className="cart-total-details">
+        <p>Sub Total</p>
+        <p>{0}</p>
+      </div>
+      <hr />
+      <div className="cart-total-details">
+        <p>Delivery Charges</p>
+        <p>{2}</p>
+      </div>
+      <hr />
+      <div className="cart-total-details">
+        <p>Total</p>
+        <p>{2}</p>
+      </div>
+    <button>Proceed to Check Out</button>
+    </div>
+    <div className="cart-promo">
+      <div className="promo-code">
+        <p>Enter Promo Code If You Have</p>
+        <div className="promoInput">
+          <input type="text"  placeholder="Enter Promo code"/>
+          <button>submit</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
   )
