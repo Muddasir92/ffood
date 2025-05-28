@@ -86,8 +86,8 @@
   transition: background 0.2s;
 } */
 
-.cartItemItem:nth-child(even){background-color: #fafafa;};
-.cartItemItem:hover{background: #f4f4f4;}
+.cartItemItem:nth-child(even){background-color: #fafafa}
+.cartItemItem:hover{background: #f4f4f4}
 /* .cartItemItem:nth-child(even) { background: #fafafa; }
 .cartItemItem:hover            { background: #f4f4f4; } */
 
