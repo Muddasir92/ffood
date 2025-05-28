@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./LoginPop.css";
+import "./Login.css";
 import { assets } from "../../assets/assets";
 
-const LoginPop = ({ setshowlogin }) => {
+const Login= ({ setshowlogin }) => {
   const [currentstate, setcurrentstate] = useState("LogIn");
   return (
     <div className="loginPopUp">
@@ -68,4 +68,4 @@ const LoginPop = ({ setshowlogin }) => {
   );
 };
 
-export default LoginPop;
+export default Login;

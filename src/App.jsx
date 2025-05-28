@@ -4,13 +4,13 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/cart/Cart";
 import PlaceOrder from "./pages/placeOrder/placeOrder";
-import LoginPop from "./components/login/LoginPop";
+import Login from "./components/login/Login";
 
 const App = () => {
   const [showlogin, setshowlogin] = useState(false);
   return (
     <div className="App">
-      {showlogin ? <LoginPop setshowlogin={setshowlogin} /> : <></>}
+      {showlogin ? <Login setshowlogin={setshowlogin} /> : <></>}
 
       <Nav setshowlogin={setshowlogin} />
       <Routes>
