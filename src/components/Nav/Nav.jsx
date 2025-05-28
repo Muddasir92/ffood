@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import "./Navbar.css";
+import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { storeContext } from "../../context/storeContext";
 
-const Navbar = ({ setshowlogin }) => {
+const Nav = ({setshowlogin}) => {
   const [menu, setMenu] = useState("home");
   const { getCartTotalAmount } = useContext(storeContext);
 
@@ -85,4 +85,4 @@ const Navbar = ({ setshowlogin }) => {
   );
 };
 
-export default Navbar;
+export default Nav;

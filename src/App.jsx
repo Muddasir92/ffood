@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar/Navbar";
+import Nav from "./components/Nav/Nav" ;
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/cart/Cart";
@@ -12,7 +12,7 @@ const App = () => {
     <div className="App">
       {showlogin ? <LoginPop setshowlogin={setshowlogin} /> : <></>}
 
-      <Navbar setshowlogin={setshowlogin} />
+      <Nav setshowlogin={setshowlogin} />
       <Routes>
         <Route path="/" element={<Home />} />
 
