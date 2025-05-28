@@ -1,5 +1,5 @@
 import "./Home.css";
-import Header from "../../components/header/Header";
+import Header from "../../components/header/Headerr";
 import Exploremenu from "../../components/exploreMenu/Exploremenu";
 import { useState } from "react";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";

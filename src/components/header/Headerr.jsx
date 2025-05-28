@@ -2,7 +2,7 @@ import "./Header.css";
 
 
 
-const Header = () => {
+const Headerr = () => {
   
   return (
     <div className="head">
@@ -25,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headerr;
