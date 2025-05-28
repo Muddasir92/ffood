@@ -20,7 +20,7 @@ const Nav = ({setshowlogin}) => {
         <div className="logo">
           <Link to="/">
             <h2 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-              Food Point
+             Sufi Food Point
             </h2>
           </Link>
         </div>
