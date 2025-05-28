@@ -20,15 +20,26 @@ const removeFromCart=(itemId)=>{
     setCartItems((pre)=>({...pre,[itemId]:pre[itemId]-1}))
 
 }
-useEffect(()=>{
-    // console.log(cartItems)
-})
+
+const getCartTotalAmount=()=>{
+    let totalAmount=0;
+    for(const item in cartItems){
+        if(cartItems[item]>0){
+            let itemInfo = food_list.find((product)=>product._id===item);
+            totalAmount +=itemInfo.price* cartItems[item];
+        }
+    }
+    return totalAmount;
+
+}
+
 const contextValue ={
     food_list,
     addToCart,
     removeFromCart,
     cartItems,
     setCartItems,
+    getCartTotalAmount,
     
 }
     return(

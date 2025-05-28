@@ -73,6 +73,16 @@ nav{
     padding-bottom: 2px;
     border-bottom: 3px solid #49557e;
 }
+.dot{
+    position: absolute;
+    top: 19px;
+    margin-left: 19px;
+    height: 9px;
+    width: 9px;
+    background-color: tomato;
+    border-radius: 50%;
+
+}
 @media (max-width:1050px) {
     .navbar .logo{
         width: 140px;

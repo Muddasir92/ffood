@@ -1,12 +1,14 @@
-import  { useState } from "react";
+import  { useContext, useState } from "react";
 import '../navbar/Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { storeContext } from "../../context/storeContext";
 
 const Navbar = ({ setshowlogin }) => {
   const [menu, setMenu] = useState("home");
+  const{getCartTotalAmount}=useContext(storeContext);
 
   function handleMenu(val) {
     setMenu(val);
@@ -70,6 +72,7 @@ const Navbar = ({ setshowlogin }) => {
           <FontAwesomeIcon icon={faSearch} className="custom_icon" />
           <Link to="/cart">
             <FontAwesomeIcon icon={faBasketShopping} className="custom_icon" />
+            <div className={getCartTotalAmount()===0? "" :"dot"}></div>
           </Link>
           <button className="singin_btn" onClick={() => setshowlogin(true)}>
             sign in

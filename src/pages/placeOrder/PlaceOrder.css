@@ -1,0 +1,47 @@
+.placeOrder{
+    
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 90px;
+    
+    
+    
+    
+}
+.placeOrderLeft{
+    align-items: center;
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.placeOrderLeft .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.placeOrderLeft input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    outline-color: tomato;
+}
+.multiFields{
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width:750px){
+    .placeOrder{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 90px;
+    }
+    .placeOrderRight{
+        width: 100%;
+    }
+
+    
+}
