@@ -76,7 +76,9 @@ const Nav = ({setshowlogin}) => {
             <FontAwesomeIcon icon={faBasketShopping} className="custom_icon" />
             <div className={getCartTotalAmount() === 0 ? "" : "dot"}></div>
           </Link>
-          <button className="singin_btn" onClick={() => setshowlogin(true)}>
+          <button className="singin_btn" onClick={() => {setshowlogin(true);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } }>
             sign in
           </button>
         </div>

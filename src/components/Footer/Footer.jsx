@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footerContent">
         <div className="leftFcontent">
-          <h1>Chicken Express</h1>
+          <h1>Food Corner</h1>
           <p>
-            At Chicken Express, enjoy premium frozen foods like chicken nuggets,
+            At Food Corner, enjoy premium frozen foods like chicken nuggets,
             kebabs, and burger patties. Quality and convenience meet for quick,
             delicious meals. Visit us today for tasty delights!
           </p>
@@ -33,7 +33,7 @@ const Footer = () => {
           <h2>Get in Touch!</h2>
           <ul>
             <li>+92 3228733898</li>
-            <li>chickenexpress@gmail.com</li>
+            <li>foodcorner@gmail.com</li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Footer = () => {
       <hr />
 
       <div className="copyright">
-        <p className="copyright-text">{`© ${year} Chicken Express. All copyrights are reserved`}</p>
+        <p className="copyright-text">{`© ${year} Food Corner. All copyrights are reserved`}</p>
       </div>
     </div>
   );

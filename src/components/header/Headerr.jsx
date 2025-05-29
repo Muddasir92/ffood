@@ -11,7 +11,7 @@ const Headerr = () => {
         <h2>
           Place Order Your Favourite Food <i className="fa fa-smile"></i>{" "}
         </h2>
-        <p>
+        <p className="headDisc">
           Choose from a diverse menu featuring a delectable selection of frozen
           foods crafted with the finest ingredients and culinary expertise. Our
           mission is to satisfy your cravings and elevate your dining experience
